@@ -13,6 +13,18 @@
 		5A32DCF0211AD22500099180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DCEF211AD22500099180 /* Assets.xcassets */; };
 		5A32DCF3211AD22500099180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DCF1211AD22500099180 /* LaunchScreen.storyboard */; };
 		5A32DCFE211AD22600099180 /* MyScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DCFD211AD22600099180 /* MyScheduleTests.swift */; };
+		5A32DD09211AD33C00099180 /* scheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */; };
+		5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */; };
+		5A32DDA7212BABB800099180 /* right-arrow-circular-button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */; };
+		5A32DDA9212BAC2C00099180 /* right-arrow-circular-button-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */; };
+		5A32DDAB212D5EA200099180 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DDAA212D5EA200099180 /* Struct.swift */; };
+		5A591D6B215DE75600C96635 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A591D6A215DE75600C96635 /* loginViewController.swift */; };
+		5A591D6F215DF14200C96635 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A591D6E215DF14200C96635 /* GoogleService-Info.plist */; };
+		5AE0AB92216204690030FD2D /* settingtab.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB91216204680030FD2D /* settingtab.png */; };
+		5AE0AB9621620D8A0030FD2D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB9521620D8A0030FD2D /* settings.png */; };
+		5AE0AB98217470E90030FD2D /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB97217470E90030FD2D /* logout.png */; };
+		8462FF7D1B4C659F62415320 /* Pods_MyScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */; };
+		C3E09B823F3D01FEEDC8845F /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +38,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A32DCE5211AD22400099180 /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		023F0E4B91C94FDF0B24BC86 /* Pods-MyScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
+		026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCCE08012C4D669379E3511 /* Pods-MySchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.release.xcconfig"; sourceTree = "<group>"; };
+		474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A32DCE8211AD22400099180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A32DCEA211AD22400099180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A32DCED211AD22400099180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A32DCEF211AD22500099180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A32DCF2211AD22500099180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A32DCF4211AD22500099180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A32DCF9211AD22600099180 /* MyScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A32DCFD211AD22600099180 /* MyScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleTests.swift; sourceTree = "<group>"; };
 		5A32DCFF211AD22600099180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTableViewController.swift; sourceTree = "<group>"; };
+		5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = scheduleTableViewCell.swift; path = ../scheduleTableViewCell.swift; sourceTree = "<group>"; };
+		5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-circular-button-2.png"; sourceTree = "<group>"; };
+		5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-circular-button-3.png"; sourceTree = "<group>"; };
+		5A32DDAA212D5EA200099180 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		5A591D6A215DE75600C96635 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		5A591D6E215DF14200C96635 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AA11083214A359800A265AF /* MyScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE0AB91216204680030FD2D /* settingtab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingtab.png; sourceTree = "<group>"; };
+		5AE0AB9521620D8A0030FD2D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		5AE0AB97217470E90030FD2D /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		5AF4BFA32147A20C00E5566C /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E09B823F3D01FEEDC8845F /* Pods_MySchedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,39 +79,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8462FF7D1B4C659F62415320 /* Pods_MyScheduleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323B3C623C49D926A7A8BF1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */,
+				3CCCE08012C4D669379E3511 /* Pods-MySchedule.release.xcconfig */,
+				F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */,
+				023F0E4B91C94FDF0B24BC86 /* Pods-MyScheduleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5A32DCDC211AD22400099180 = {
 			isa = PBXGroup;
 			children = (
 				5A32DCE7211AD22400099180 /* MySchedule */,
 				5A32DCFC211AD22600099180 /* MyScheduleTests */,
-				5A32DCE6211AD22400099180 /* Products */,
+				5AF4BFA32147A20C00E5566C /* MySchedule.app */,
+				323B3C623C49D926A7A8BF1E /* Pods */,
+				939371BA8C91B8DC7F1EE438 /* Frameworks */,
+				5AA11083214A359800A265AF /* MyScheduleTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		5A32DCE6211AD22400099180 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5A32DCE5211AD22400099180 /* MySchedule.app */,
-				5A32DCF9211AD22600099180 /* MyScheduleTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5A32DCE7211AD22400099180 /* MySchedule */ = {
 			isa = PBXGroup;
 			children = (
+				5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */,
+				5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */,
+				5AE0AB91216204680030FD2D /* settingtab.png */,
+				5AE0AB9521620D8A0030FD2D /* settings.png */,
+				5AE0AB97217470E90030FD2D /* logout.png */,
 				5A32DCE8211AD22400099180 /* AppDelegate.swift */,
 				5A32DCEA211AD22400099180 /* ViewController.swift */,
+				5A32DDAA212D5EA200099180 /* Struct.swift */,
+				5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */,
+				5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */,
+				5A591D6A215DE75600C96635 /* loginViewController.swift */,
 				5A32DCEC211AD22400099180 /* Main.storyboard */,
 				5A32DCEF211AD22500099180 /* Assets.xcassets */,
 				5A32DCF1211AD22500099180 /* LaunchScreen.storyboard */,
 				5A32DCF4211AD22500099180 /* Info.plist */,
+				5A591D6E215DF14200C96635 /* GoogleService-Info.plist */,
 			);
 			path = MySchedule;
 			sourceTree = "<group>";
@@ -96,6 +141,15 @@
 			path = MyScheduleTests;
 			sourceTree = "<group>";
 		};
+		939371BA8C91B8DC7F1EE438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */,
+				026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A32DD02211AD22600099180 /* Build configuration list for PBXNativeTarget "MySchedule" */;
 			buildPhases = (
+				8DFC1B911707C29AF5F39FE7 /* [CP] Check Pods Manifest.lock */,
 				5A32DCE1211AD22400099180 /* Sources */,
 				5A32DCE2211AD22400099180 /* Frameworks */,
 				5A32DCE3211AD22400099180 /* Resources */,
+				31950A0E96D3DC9449C0FF4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,13 +169,14 @@
 			);
 			name = MySchedule;
 			productName = MySchedule;
-			productReference = 5A32DCE5211AD22400099180 /* MySchedule.app */;
+			productReference = 5AF4BFA32147A20C00E5566C /* MySchedule.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5A32DCF8211AD22600099180 /* MyScheduleTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A32DD05211AD22600099180 /* Build configuration list for PBXNativeTarget "MyScheduleTests" */;
 			buildPhases = (
+				D4F796BD34D5B1A56035A504 /* [CP] Check Pods Manifest.lock */,
 				5A32DCF5211AD22600099180 /* Sources */,
 				5A32DCF6211AD22600099180 /* Frameworks */,
 				5A32DCF7211AD22600099180 /* Resources */,
@@ -131,7 +188,7 @@
 			);
 			name = MyScheduleTests;
 			productName = MyScheduleTests;
-			productReference = 5A32DCF9211AD22600099180 /* MyScheduleTests.xctest */;
+			productReference = 5AA11083214A359800A265AF /* MyScheduleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +219,7 @@
 				Base,
 			);
 			mainGroup = 5A32DCDC211AD22400099180;
-			productRefGroup = 5A32DCE6211AD22400099180 /* Products */;
+			productRefGroup = 5A32DCDC211AD22400099180;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -177,9 +234,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE0AB9621620D8A0030FD2D /* settings.png in Resources */,
 				5A32DCF3211AD22500099180 /* LaunchScreen.storyboard in Resources */,
 				5A32DCF0211AD22500099180 /* Assets.xcassets in Resources */,
+				5A32DDA9212BAC2C00099180 /* right-arrow-circular-button-3.png in Resources */,
+				5AE0AB92216204690030FD2D /* settingtab.png in Resources */,
+				5A32DDA7212BABB800099180 /* right-arrow-circular-button-2.png in Resources */,
 				5A32DCEE211AD22400099180 /* Main.storyboard in Resources */,
+				5A591D6F215DF14200C96635 /* GoogleService-Info.plist in Resources */,
+				5AE0AB98217470E90030FD2D /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +255,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31950A0E96D3DC9449C0FF4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DFC1B911707C29AF5F39FE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySchedule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4F796BD34D5B1A56035A504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyScheduleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A32DCE1211AD22400099180 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A32DD09211AD33C00099180 /* scheduleTableViewController.swift in Sources */,
 				5A32DCEB211AD22400099180 /* ViewController.swift in Sources */,
+				5A591D6B215DE75600C96635 /* loginViewController.swift in Sources */,
+				5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */,
+				5A32DDAB212D5EA200099180 /* Struct.swift in Sources */,
 				5A32DCE9211AD22400099180 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +486,7 @@
 		};
 		5A32DD03211AD22600099180 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +505,7 @@
 		};
 		5A32DD04211AD22600099180 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCCE08012C4D669379E3511 /* Pods-MySchedule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +524,7 @@
 		};
 		5A32DD06211AD22600099180 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +546,7 @@
 		};
 		5A32DD07211AD22600099180 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023F0E4B91C94FDF0B24BC86 /* Pods-MyScheduleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
