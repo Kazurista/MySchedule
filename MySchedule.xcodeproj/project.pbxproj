@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044445C0C192BFAA6C630926 /* Pods_MyScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE6C9AD85416A2AB867EC53 /* Pods_MyScheduleTests.framework */; };
-		3785DE804CE66B574E00A25D /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0E419D9627AB7E0F2008EC /* Pods_MySchedule.framework */; };
 		5A32DCE9211AD22400099180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DCE8211AD22400099180 /* AppDelegate.swift */; };
 		5A32DCEB211AD22400099180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DCEA211AD22400099180 /* ViewController.swift */; };
 		5A32DCEE211AD22400099180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DCEC211AD22400099180 /* Main.storyboard */; };
@@ -19,8 +17,14 @@
 		5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */; };
 		5A32DDA7212BABB800099180 /* right-arrow-circular-button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */; };
 		5A32DDA9212BAC2C00099180 /* right-arrow-circular-button-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */; };
-		5A32DDAB212D5EA200099180 /* StructGiveDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DDAA212D5EA200099180 /* StructGiveDatas.swift */; };
-		5AF4BFA1214793E100E5566C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF4BFA0214793E100E5566C /* GoogleService-Info.plist */; };
+		5A32DDAB212D5EA200099180 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DDAA212D5EA200099180 /* Struct.swift */; };
+		5A591D6B215DE75600C96635 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A591D6A215DE75600C96635 /* loginViewController.swift */; };
+		5A591D6F215DF14200C96635 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A591D6E215DF14200C96635 /* GoogleService-Info.plist */; };
+		5AE0AB92216204690030FD2D /* settingtab.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB91216204680030FD2D /* settingtab.png */; };
+		5AE0AB9621620D8A0030FD2D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB9521620D8A0030FD2D /* settings.png */; };
+		5AE0AB98217470E90030FD2D /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB97217470E90030FD2D /* logout.png */; };
+		8462FF7D1B4C659F62415320 /* Pods_MyScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */; };
+		C3E09B823F3D01FEEDC8845F /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,28 +38,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3EE6C9AD85416A2AB867EC53 /* Pods_MyScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EB26DBE3BD9997A8B653CFA /* Pods-MyScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5A32DCE5211AD22400099180 /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		023F0E4B91C94FDF0B24BC86 /* Pods-MyScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
+		026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyScheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCCE08012C4D669379E3511 /* Pods-MySchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.release.xcconfig"; sourceTree = "<group>"; };
+		474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A32DCE8211AD22400099180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A32DCEA211AD22400099180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A32DCED211AD22400099180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A32DCEF211AD22500099180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A32DCF2211AD22500099180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A32DCF4211AD22500099180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A32DCF9211AD22600099180 /* MyScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A32DCFD211AD22600099180 /* MyScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleTests.swift; sourceTree = "<group>"; };
 		5A32DCFF211AD22600099180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTableViewController.swift; sourceTree = "<group>"; };
 		5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = scheduleTableViewCell.swift; path = ../scheduleTableViewCell.swift; sourceTree = "<group>"; };
 		5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-circular-button-2.png"; sourceTree = "<group>"; };
 		5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-circular-button-3.png"; sourceTree = "<group>"; };
-		5A32DDAA212D5EA200099180 /* StructGiveDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructGiveDatas.swift; sourceTree = "<group>"; };
-		5AF4BFA0214793E100E5566C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		755F7E8AE558AD457D243559 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
-		79E0921CB65BB0DA6FEF3FD8 /* Pods-MySchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.release.xcconfig"; sourceTree = "<group>"; };
-		7A0E419D9627AB7E0F2008EC /* Pods_MySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99C3FDBE302C4D2FF023E8B4 /* Pods-MyScheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A32DDAA212D5EA200099180 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		5A591D6A215DE75600C96635 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		5A591D6E215DF14200C96635 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AA11083214A359800A265AF /* MyScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE0AB91216204680030FD2D /* settingtab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingtab.png; sourceTree = "<group>"; };
+		5AE0AB9521620D8A0030FD2D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		5AE0AB97217470E90030FD2D /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		5AF4BFA32147A20C00E5566C /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3785DE804CE66B574E00A25D /* Pods_MySchedule.framework in Frameworks */,
+				C3E09B823F3D01FEEDC8845F /* Pods_MySchedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,31 +79,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044445C0C192BFAA6C630926 /* Pods_MyScheduleTests.framework in Frameworks */,
+				8462FF7D1B4C659F62415320 /* Pods_MyScheduleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323B3C623C49D926A7A8BF1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */,
+				3CCCE08012C4D669379E3511 /* Pods-MySchedule.release.xcconfig */,
+				F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */,
+				023F0E4B91C94FDF0B24BC86 /* Pods-MyScheduleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5A32DCDC211AD22400099180 = {
 			isa = PBXGroup;
 			children = (
 				5A32DCE7211AD22400099180 /* MySchedule */,
 				5A32DCFC211AD22600099180 /* MyScheduleTests */,
-				5A32DCE6211AD22400099180 /* Products */,
-				6253AAF45AAF06A4CFAB053E /* Pods */,
-				FA3EEE0F4EA30F8F8D57AC98 /* Frameworks */,
+				5AF4BFA32147A20C00E5566C /* MySchedule.app */,
+				323B3C623C49D926A7A8BF1E /* Pods */,
+				939371BA8C91B8DC7F1EE438 /* Frameworks */,
+				5AA11083214A359800A265AF /* MyScheduleTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		5A32DCE6211AD22400099180 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5A32DCE5211AD22400099180 /* MySchedule.app */,
-				5A32DCF9211AD22600099180 /* MyScheduleTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5A32DCE7211AD22400099180 /* MySchedule */ = {
@@ -103,16 +114,20 @@
 			children = (
 				5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */,
 				5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */,
+				5AE0AB91216204680030FD2D /* settingtab.png */,
+				5AE0AB9521620D8A0030FD2D /* settings.png */,
+				5AE0AB97217470E90030FD2D /* logout.png */,
 				5A32DCE8211AD22400099180 /* AppDelegate.swift */,
 				5A32DCEA211AD22400099180 /* ViewController.swift */,
-				5A32DDAA212D5EA200099180 /* StructGiveDatas.swift */,
+				5A32DDAA212D5EA200099180 /* Struct.swift */,
 				5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */,
 				5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */,
+				5A591D6A215DE75600C96635 /* loginViewController.swift */,
 				5A32DCEC211AD22400099180 /* Main.storyboard */,
 				5A32DCEF211AD22500099180 /* Assets.xcassets */,
 				5A32DCF1211AD22500099180 /* LaunchScreen.storyboard */,
 				5A32DCF4211AD22500099180 /* Info.plist */,
-				5AF4BFA0214793E100E5566C /* GoogleService-Info.plist */,
+				5A591D6E215DF14200C96635 /* GoogleService-Info.plist */,
 			);
 			path = MySchedule;
 			sourceTree = "<group>";
@@ -126,22 +141,11 @@
 			path = MyScheduleTests;
 			sourceTree = "<group>";
 		};
-		6253AAF45AAF06A4CFAB053E /* Pods */ = {
+		939371BA8C91B8DC7F1EE438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				755F7E8AE558AD457D243559 /* Pods-MySchedule.debug.xcconfig */,
-				79E0921CB65BB0DA6FEF3FD8 /* Pods-MySchedule.release.xcconfig */,
-				4EB26DBE3BD9997A8B653CFA /* Pods-MyScheduleTests.debug.xcconfig */,
-				99C3FDBE302C4D2FF023E8B4 /* Pods-MyScheduleTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FA3EEE0F4EA30F8F8D57AC98 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7A0E419D9627AB7E0F2008EC /* Pods_MySchedule.framework */,
-				3EE6C9AD85416A2AB867EC53 /* Pods_MyScheduleTests.framework */,
+				474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */,
+				026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,7 +169,7 @@
 			);
 			name = MySchedule;
 			productName = MySchedule;
-			productReference = 5A32DCE5211AD22400099180 /* MySchedule.app */;
+			productReference = 5AF4BFA32147A20C00E5566C /* MySchedule.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5A32DCF8211AD22600099180 /* MyScheduleTests */ = {
@@ -184,7 +188,7 @@
 			);
 			name = MyScheduleTests;
 			productName = MyScheduleTests;
-			productReference = 5A32DCF9211AD22600099180 /* MyScheduleTests.xctest */;
+			productReference = 5AA11083214A359800A265AF /* MyScheduleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +219,7 @@
 				Base,
 			);
 			mainGroup = 5A32DCDC211AD22400099180;
-			productRefGroup = 5A32DCE6211AD22400099180 /* Products */;
+			productRefGroup = 5A32DCDC211AD22400099180;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -230,12 +234,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE0AB9621620D8A0030FD2D /* settings.png in Resources */,
 				5A32DCF3211AD22500099180 /* LaunchScreen.storyboard in Resources */,
 				5A32DCF0211AD22500099180 /* Assets.xcassets in Resources */,
 				5A32DDA9212BAC2C00099180 /* right-arrow-circular-button-3.png in Resources */,
+				5AE0AB92216204690030FD2D /* settingtab.png in Resources */,
 				5A32DDA7212BABB800099180 /* right-arrow-circular-button-2.png in Resources */,
 				5A32DCEE211AD22400099180 /* Main.storyboard in Resources */,
-				5AF4BFA1214793E100E5566C /* GoogleService-Info.plist in Resources */,
+				5A591D6F215DF14200C96635 /* GoogleService-Info.plist in Resources */,
+				5AE0AB98217470E90030FD2D /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,18 +261,18 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,15 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MySchedule-checkManifestLockResult.txt",
 			);
@@ -300,15 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MyScheduleTests-checkManifestLockResult.txt",
 			);
@@ -326,8 +325,9 @@
 			files = (
 				5A32DD09211AD33C00099180 /* scheduleTableViewController.swift in Sources */,
 				5A32DCEB211AD22400099180 /* ViewController.swift in Sources */,
+				5A591D6B215DE75600C96635 /* loginViewController.swift in Sources */,
 				5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */,
-				5A32DDAB212D5EA200099180 /* StructGiveDatas.swift in Sources */,
+				5A32DDAB212D5EA200099180 /* Struct.swift in Sources */,
 				5A32DCE9211AD22400099180 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,7 +486,7 @@
 		};
 		5A32DD03211AD22600099180 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 755F7E8AE558AD457D243559 /* Pods-MySchedule.debug.xcconfig */;
+			baseConfigurationReference = F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,7 +505,7 @@
 		};
 		5A32DD04211AD22600099180 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79E0921CB65BB0DA6FEF3FD8 /* Pods-MySchedule.release.xcconfig */;
+			baseConfigurationReference = 3CCCE08012C4D669379E3511 /* Pods-MySchedule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,7 +524,7 @@
 		};
 		5A32DD06211AD22600099180 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EB26DBE3BD9997A8B653CFA /* Pods-MyScheduleTests.debug.xcconfig */;
+			baseConfigurationReference = F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,7 +546,7 @@
 		};
 		5A32DD07211AD22600099180 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99C3FDBE302C4D2FF023E8B4 /* Pods-MyScheduleTests.release.xcconfig */;
+			baseConfigurationReference = 023F0E4B91C94FDF0B24BC86 /* Pods-MyScheduleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -11,5 +11,9 @@ target 'MySchedule' do
     inherit! :search_paths
     # Pods for testing
   end
+  
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'  
+
 end

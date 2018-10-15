@@ -82,13 +82,91 @@
                             <outlet property="delegate" destination="WfY-sh-ny9" id="Znu-dk-xIN"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="logout" image="logout.png" width="381" id="qqs-W1-oYx">
+                            <connections>
+                                <action selector="logoutButton:" destination="WfY-sh-ny9" id="Ke9-oc-0fH"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="KbU-dG-JWb"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="LyJ-3u-iS4" kind="show" identifier="toViewController" id="BPk-qf-biK"/>
+                        <segue destination="EWI-1N-L2j" kind="presentation" identifier="login" id="xi4-47-fRj"/>
+                        <segue destination="LyJ-3u-iS4" kind="show" identifier="toViewController" id="OZn-fp-GDB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lME-hC-0cL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-466.39999999999998" y="31.934032983508249"/>
+            <point key="canvasLocation" x="472.80000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="GqF-Qm-Ir0">
+            <objects>
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EWI-1N-L2j" customClass="loginViewController" customModule="MySchedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hS-zM-1ax">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdk-hQ-ddG">
+                                <rect key="frame" x="16" y="200" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRy-So-HXv">
+                                <rect key="frame" x="16" y="310" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-Br-i4y">
+                                <rect key="frame" x="102.5" y="520" width="170" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-2l-eCW">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpButton:" destination="EWI-1N-L2j" eventType="touchUpInside" id="qpx-ap-bls"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsJ-ht-tLM">
+                                        <rect key="frame" x="107" y="0.0" width="63" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="EWI-1N-L2j" eventType="touchUpInside" id="WC4-6A-4Bp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wRq-Br-i4y" firstAttribute="centerX" secondItem="1hS-zM-1ax" secondAttribute="centerX" id="2CZ-0H-rfV"/>
+                            <constraint firstItem="qdk-hQ-ddG" firstAttribute="top" secondItem="8Rq-37-syZ" secondAttribute="top" constant="180" id="8pQ-0T-HVT"/>
+                            <constraint firstItem="uRy-So-HXv" firstAttribute="leading" secondItem="8Rq-37-syZ" secondAttribute="leading" constant="16" id="FAF-iw-Uvo"/>
+                            <constraint firstItem="wRq-Br-i4y" firstAttribute="top" secondItem="uRy-So-HXv" secondAttribute="bottom" constant="180" id="G3m-ht-o1p"/>
+                            <constraint firstItem="8Rq-37-syZ" firstAttribute="trailing" secondItem="qdk-hQ-ddG" secondAttribute="trailing" constant="16" id="SVI-uC-wWa"/>
+                            <constraint firstItem="uRy-So-HXv" firstAttribute="top" secondItem="qdk-hQ-ddG" secondAttribute="bottom" constant="80" id="aoI-q2-Md8"/>
+                            <constraint firstItem="qdk-hQ-ddG" firstAttribute="leading" secondItem="8Rq-37-syZ" secondAttribute="leading" constant="16" id="f6i-v6-xg8"/>
+                            <constraint firstItem="8Rq-37-syZ" firstAttribute="trailing" secondItem="uRy-So-HXv" secondAttribute="trailing" constant="16" id="wXD-qv-2Wj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Rq-37-syZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="qdk-hQ-ddG" id="FYd-PO-F0c"/>
+                        <outlet property="passwordTextField" destination="uRy-So-HXv" id="TCd-uQ-btK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9h1-Mu-GvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466.39999999999998" y="788.45577211394311"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Skw-7i-DbE">
@@ -126,7 +204,7 @@
                     <navigationItem key="navigationItem" id="E9C-C7-VCD">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="QaT-h8-dD6">
                             <connections>
-                                <segue destination="gIz-9S-1N8" kind="unwind" unwindAction="backSegueWithSegue:" id="Qfz-l6-ScI"/>
+                                <segue destination="gIz-9S-1N8" kind="unwind" unwindAction="backSegueWithSegue:" id="XeO-PM-Ec6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -138,7 +216,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSl-jx-61x" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gIz-9S-1N8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1093.5999999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="2032.8" y="31.934032983508249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nOD-2x-Grc">
@@ -156,10 +234,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3b-II-U5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327" y="32"/>
+            <point key="canvasLocation" x="1240.8" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logout.png" width="32" height="32"/>
         <image name="right-arrow-circular-button-2.png" width="64" height="64"/>
     </resources>
 </document>

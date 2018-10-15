@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class scheduleTableViewController: UITableViewController, ViewControllerDelegate {
     
@@ -16,22 +17,9 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
 //    プロパティ...変数の宣言
 //    メソッド・・・関数の宣言
     
-//    struct GiveDatas {
-//        
-//        var giveData: String?
-//        var giveRow: Int?
-//        var text: String?
-//        
-//    }
+    var giveDatas: GiveDatas?  // Struct.swiftで定義されているGiveData型を使って新たな変数を定義
     
-    var giveDatas: GiveDatas?
-    
-    
-//    var giveData: String?
-//    var giveRow: Int?
-//    var text: String?
-    
-    struct DateAndTodo {
+    struct DateAndTodo {   // 日付とtoDoの文字列を変数にもつ構造体
         
         var date: String
         var toDo: String
@@ -42,20 +30,14 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
 
             self.date = formatter.string(from: date)  // ここでDate型の値であるdateをString型に変えてる
 //            self.toDo = toDo                          // 下で決められたtoDoの値が代入される
-            self.toDo = "Nothing"                 // 今回はどのCellにもWrite ToDo Listsが表示されるようにした
+            self.toDo = "Nothing"                 // 今回はどのCellにも"Nothing"が表示されるようにした
         }
         
     }
     
-    var dts: [DateAndTodo] = []
-
-//      ここで初期値を決めて、この初期値がStructの中のinit関数に渡される(dateはDate型、toDoはString型)
-//    var dts: [DateAndTodo] = [DateAndTodo.init(date: Date(), toDo: ""),
-//                              DateAndTodo.init(date: Date().addingTimeInterval(60*60*24), toDo: ""),
-//                              DateAndTodo.init(date: Date().addingTimeInterval(60*60*24*2), toDo: ""),
-//                              DateAndTodo.init(date: Date().addingTimeInterval(60*60*24*3), toDo: ""),
-//                              DateAndTodo.init(date: Date().addingTimeInterval(60*60*24*4), toDo: "")
-//                             ]
+    var dts: [DateAndTodo] = []   // 上で定義したDateAndTodo型の構造体を空の配列に代入
+    
+    var ref:DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +45,17 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
         for i:Int in 0...100 {
             dts += [DateAndTodo.init(date: Date().addingTimeInterval(TimeInterval(60*60*24*i)), toDo: "Nothing")]
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         
+        if UserDefaults.standard.object(forKey: "check") != nil {
+            
+        }else{
+            
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "login")
+            self.present(loginViewController!, animated: true, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -108,15 +100,7 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath) as? scheduleTableViewCell else {
-//            fatalError("The dequeued cell is not an instance of scheduleTableViewCell.")
-//        }
         let cell = tableView.cellForRow(at: indexPath) as? scheduleTableViewCell
-        
-//        giveData = cell?.dateLabel.text
-//        giveRow = indexPath.row
-//
-//        text = cell?.todoLabel.text!
         
         giveDatas = GiveDatas.init(giveData: cell?.dateLabel.text, giveRow: indexPath.row, text: cell?.todoLabel.text)
         
@@ -129,13 +113,6 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
             let nav = segue.destination as! UINavigationController
             
             let vc = nav.topViewController as! ViewController
-//            vc.recieveData = giveData!
-//            vc.recieveRow = giveRow!
-//
-//            vc.recieveToDo = text!
-//            vc.recieveDatas?.recieveData = GiveDatas.giveData!
-//            vc.recieveDatas?.recieveRow = GiveDatas.giveRow!
-//            vc.recieveDatas?.recieveToDo = GiveDatas.text!
             
             vc.recieveDatas = giveDatas!
             
@@ -147,13 +124,56 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
         
         self.dts[number].toDo = info
         
-//        userDefaults.set(dts, forKey: "todo")
-//        userDefaults.synchronize()
-        
         tableView.reloadData()
+        
+        // add()関数の中身をここに書いた。
+        //VCから日付データとtoDoデータを受け取り、それをサーバーへと保存する
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        
+        let dateData = self.dts[number].date
+        let todoData = info
+        
+        let user: NSDictionary = ["dateData" : dateData, "todoData" : todoData]
+        
+        ref.child("present").childByAutoId().setValue(user)
     }
     
-    @IBAction func backSegue(segue: UIStoryboardSegue) {}
+    @IBAction func backSegue(segue: UIStoryboardSegue) {
+        
+    }
+    
+    
+    func loadAll(){
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        var ref: DatabaseReference!
+        ref = Database.database().reference(fromURL: "https://myschedule-28968.firebaseio.com/").child("present")
+        
+        ref.observeSingleEvent(of: .childAdded, with: { snapshot in
+            
+        })
+    }
+    
+    @IBAction func logoutButton(_ sender: Any) {
+        
+        let alertViewController = UIAlertController(title: "Sign out", message: "Would you like to sign out?", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Sign out", style: .default, handler: { action in
+            try! Auth.auth().signOut()
+            UserDefaults.standard.removeObject(forKey: "check")
+            self.dismiss(animated: true, completion: nil)
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        
+        alertViewController.addAction(okAction)
+        alertViewController.addAction(cancelAction)
+        
+        present(alertViewController, animated: true, completion: nil)
+    }
+    
     
 //    8/9/Thu
 //    最初は下のように書いていたが、うまくいかなかった。
@@ -172,50 +192,5 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
 //
 //    Date().addingTimeInterval(60*60*24) //今日の日付から24時間後の日付が取得される　//UNIX time
 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
