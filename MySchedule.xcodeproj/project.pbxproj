@@ -23,6 +23,7 @@
 		5AE0AB92216204690030FD2D /* settingtab.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB91216204680030FD2D /* settingtab.png */; };
 		5AE0AB9621620D8A0030FD2D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB9521620D8A0030FD2D /* settings.png */; };
 		5AE0AB98217470E90030FD2D /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB97217470E90030FD2D /* logout.png */; };
+		5AE0AB9A217D965A0030FD2D /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE0AB99217D965A0030FD2D /* scheduleViewController.swift */; };
 		8462FF7D1B4C659F62415320 /* Pods_MyScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */; };
 		C3E09B823F3D01FEEDC8845F /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		5AE0AB91216204680030FD2D /* settingtab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingtab.png; sourceTree = "<group>"; };
 		5AE0AB9521620D8A0030FD2D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		5AE0AB97217470E90030FD2D /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		5AE0AB99217D965A0030FD2D /* scheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
 		5AF4BFA32147A20C00E5566C /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */,
 				5A591D6A215DE75600C96635 /* loginViewController.swift */,
 				5A32DCEC211AD22400099180 /* Main.storyboard */,
+				5AE0AB99217D965A0030FD2D /* scheduleViewController.swift */,
 				5A32DCEF211AD22500099180 /* Assets.xcassets */,
 				5A32DCF1211AD22500099180 /* LaunchScreen.storyboard */,
 				5A32DCF4211AD22500099180 /* Info.plist */,
@@ -327,6 +330,7 @@
 				5A32DCEB211AD22400099180 /* ViewController.swift in Sources */,
 				5A591D6B215DE75600C96635 /* loginViewController.swift in Sources */,
 				5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */,
+				5AE0AB9A217D965A0030FD2D /* scheduleViewController.swift in Sources */,
 				5A32DDAB212D5EA200099180 /* Struct.swift in Sources */,
 				5A32DCE9211AD22400099180 /* AppDelegate.swift in Sources */,
 			);

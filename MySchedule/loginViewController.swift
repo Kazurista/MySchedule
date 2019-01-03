@@ -62,19 +62,37 @@ class loginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+        if self.emailTextField.text == nil || self.passwordTextField.text == nil {
             
-            if error == nil {
+            let alertViewController = UIAlertController(title: "Empty", message: "Please write your empty items", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alertViewController.addAction(okAction)
+            
+            self.present(alertViewController, animated: true, completion: nil)
+            
+        }else{
+            
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                 
-            }else{
+                if error == nil {
+                    
+                    UserDefaults.standard.set("check", forKey: "check")
+                    
+                    self.dismiss(animated: true, completion: nil)
+                    
+                }else{
+                    
+                    let alertViewController = UIAlertController(title: "Empty", message: error?.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alertViewController.addAction(okAction)
+                    
+                    self.present(alertViewController, animated: true, completion: nil)
+                }
                 
-                let alertViewController = UIAlertController(title: "Empty", message: error?.localizedDescription, preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertViewController.addAction(okAction)
-                
-                self.present(alertViewController, animated: true, completion: nil)
             }
+          
         }
     }
     
