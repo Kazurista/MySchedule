@@ -42,7 +42,7 @@ class loginViewController: UIViewController {
                 
                 if error == nil {
                     
-                    UserDefaults.standard.set("check", forKey: "check")
+//                    UserDefaults.standard.set("check", forKey: "check")
                     
                     self.dismiss(animated: true, completion: nil)
                     
@@ -77,7 +77,7 @@ class loginViewController: UIViewController {
                 
                 if error == nil {
                     
-                    UserDefaults.standard.set("check", forKey: "check")
+//                    UserDefaults.standard.set("check", forKey: "check")
                     
                     self.dismiss(animated: true, completion: nil)
                     

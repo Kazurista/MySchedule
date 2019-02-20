@@ -13,8 +13,6 @@
 		5A32DCF0211AD22500099180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DCEF211AD22500099180 /* Assets.xcassets */; };
 		5A32DCF3211AD22500099180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DCF1211AD22500099180 /* LaunchScreen.storyboard */; };
 		5A32DCFE211AD22600099180 /* MyScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DCFD211AD22600099180 /* MyScheduleTests.swift */; };
-		5A32DD09211AD33C00099180 /* scheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */; };
-		5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */; };
 		5A32DDA7212BABB800099180 /* right-arrow-circular-button-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */; };
 		5A32DDA9212BAC2C00099180 /* right-arrow-circular-button-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */; };
 		5A32DDAB212D5EA200099180 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32DDAA212D5EA200099180 /* Struct.swift */; };
@@ -23,7 +21,9 @@
 		5AE0AB92216204690030FD2D /* settingtab.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB91216204680030FD2D /* settingtab.png */; };
 		5AE0AB9621620D8A0030FD2D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB9521620D8A0030FD2D /* settings.png */; };
 		5AE0AB98217470E90030FD2D /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE0AB97217470E90030FD2D /* logout.png */; };
-		5AE0AB9A217D965A0030FD2D /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE0AB99217D965A0030FD2D /* scheduleViewController.swift */; };
+		5AE8511321FAD2E4006EDDA0 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8511221FAD2E4006EDDA0 /* mainViewController.swift */; };
+		5AE8511521FAD40D006EDDA0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE8511421FAD40D006EDDA0 /* TableViewCell.swift */; };
+		5AE8511721FAEC9F006EDDA0 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE8511621FAEC9F006EDDA0 /* home2.png */; };
 		8462FF7D1B4C659F62415320 /* Pods_MyScheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026DA84FD37EFABBC89C4295 /* Pods_MyScheduleTests.framework */; };
 		C3E09B823F3D01FEEDC8845F /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474275A8C0114A378709A5D2 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
@@ -51,8 +51,6 @@
 		5A32DCF4211AD22500099180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A32DCFD211AD22600099180 /* MyScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleTests.swift; sourceTree = "<group>"; };
 		5A32DCFF211AD22600099180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTableViewController.swift; sourceTree = "<group>"; };
-		5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = scheduleTableViewCell.swift; path = ../scheduleTableViewCell.swift; sourceTree = "<group>"; };
 		5A32DDA6212BABB800099180 /* right-arrow-circular-button-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-circular-button-2.png"; sourceTree = "<group>"; };
 		5A32DDA8212BAC2B00099180 /* right-arrow-circular-button-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow-circular-button-3.png"; sourceTree = "<group>"; };
 		5A32DDAA212D5EA200099180 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
@@ -62,7 +60,9 @@
 		5AE0AB91216204680030FD2D /* settingtab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingtab.png; sourceTree = "<group>"; };
 		5AE0AB9521620D8A0030FD2D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		5AE0AB97217470E90030FD2D /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
-		5AE0AB99217D965A0030FD2D /* scheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
+		5AE8511221FAD2E4006EDDA0 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		5AE8511421FAD40D006EDDA0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5AE8511621FAEC9F006EDDA0 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		5AF4BFA32147A20C00E5566C /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06FEE5ADE655CC92384E622 /* Pods-MyScheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyScheduleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyScheduleTests/Pods-MyScheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C2F2D34EC8DA58EAD69D91 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,14 +119,14 @@
 				5AE0AB91216204680030FD2D /* settingtab.png */,
 				5AE0AB9521620D8A0030FD2D /* settings.png */,
 				5AE0AB97217470E90030FD2D /* logout.png */,
+				5AE8511621FAEC9F006EDDA0 /* home2.png */,
 				5A32DCE8211AD22400099180 /* AppDelegate.swift */,
 				5A32DCEA211AD22400099180 /* ViewController.swift */,
 				5A32DDAA212D5EA200099180 /* Struct.swift */,
-				5A32DD08211AD33C00099180 /* scheduleTableViewController.swift */,
-				5A32DD0C211ADDB000099180 /* scheduleTableViewCell.swift */,
+				5AE8511221FAD2E4006EDDA0 /* mainViewController.swift */,
+				5AE8511421FAD40D006EDDA0 /* TableViewCell.swift */,
 				5A591D6A215DE75600C96635 /* loginViewController.swift */,
 				5A32DCEC211AD22400099180 /* Main.storyboard */,
-				5AE0AB99217D965A0030FD2D /* scheduleViewController.swift */,
 				5A32DCEF211AD22500099180 /* Assets.xcassets */,
 				5A32DCF1211AD22500099180 /* LaunchScreen.storyboard */,
 				5A32DCF4211AD22500099180 /* Info.plist */,
@@ -206,9 +206,11 @@
 				TargetAttributes = {
 					5A32DCE4211AD22400099180 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					5A32DCF8211AD22600099180 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 5A32DCE4211AD22400099180;
 					};
 				};
@@ -246,6 +248,7 @@
 				5A32DCEE211AD22400099180 /* Main.storyboard in Resources */,
 				5A591D6F215DF14200C96635 /* GoogleService-Info.plist in Resources */,
 				5AE0AB98217470E90030FD2D /* logout.png in Resources */,
+				5AE8511721FAEC9F006EDDA0 /* home2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,15 +269,29 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -326,11 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A32DD09211AD33C00099180 /* scheduleTableViewController.swift in Sources */,
+				5AE8511521FAD40D006EDDA0 /* TableViewCell.swift in Sources */,
 				5A32DCEB211AD22400099180 /* ViewController.swift in Sources */,
+				5AE8511321FAD2E4006EDDA0 /* mainViewController.swift in Sources */,
 				5A591D6B215DE75600C96635 /* loginViewController.swift in Sources */,
-				5A32DD0D211ADDB000099180 /* scheduleTableViewCell.swift in Sources */,
-				5AE0AB9A217D965A0030FD2D /* scheduleViewController.swift in Sources */,
 				5A32DDAB212D5EA200099180 /* Struct.swift in Sources */,
 				5A32DCE9211AD22400099180 /* AppDelegate.swift in Sources */,
 			);
@@ -502,7 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MySchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -521,7 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MySchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -542,7 +558,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyScheduleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySchedule.app/MySchedule";
 			};
@@ -564,7 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyScheduleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySchedule.app/MySchedule";
 			};

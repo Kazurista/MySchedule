@@ -99,7 +99,7 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
         tableView.estimatedRowHeight = 91   // セルの高さ
-        return UITableViewAutomaticDimension   // 自動設定
+        return UITableView.automaticDimension   // 自動設定
 
     }
 
@@ -107,7 +107,7 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
 
         let cell = tableView.cellForRow(at: indexPath) as? scheduleTableViewCell
 
-        giveDatas = GiveDatas.init(giveData: cell?.dateLabel.text, giveRow: indexPath.row, text: cell?.todoLabel.text)
+        giveDatas = GiveDatas.init(giveDate: cell?.dateLabel.text, giveRow: indexPath.row, text: cell?.todoLabel.text)
 
         performSegue(withIdentifier: "toViewController", sender: nil)
     }
@@ -144,9 +144,9 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
         ref.child("present").childByAutoId().setValue(user)
     }
 
-    @IBAction func backSegue(segue: UIStoryboardSegue) {
-
-    }
+//    @IBAction func backSegue(segue: UIStoryboardSegue) {
+//
+//    }
 
 
     func loadAll(){
@@ -160,7 +160,8 @@ class scheduleTableViewController: UITableViewController, ViewControllerDelegate
 
         })
     }
-
+    
+    
     @IBAction func logoutButton(_ sender: Any) {
 
         let alertViewController = UIAlertController(title: "Sign out", message: "Would you like to sign out?", preferredStyle: .alert)

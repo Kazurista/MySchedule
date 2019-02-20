@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DateLabel.text = recieveDatas?.giveData
+        DateLabel.text = recieveDatas?.giveDate
         writeSomething.text = recieveDatas?.text
         
         writeSomething.layer.borderColor = UIColor.lightGray.cgColor

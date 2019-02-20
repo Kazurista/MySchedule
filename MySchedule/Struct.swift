@@ -10,7 +10,7 @@ import Foundation
 
 struct GiveDatas {
     
-    var giveData: String?
+    var giveDate: String?
     var giveRow: Int?
     var text: String?
     
